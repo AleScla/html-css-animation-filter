@@ -147,6 +147,7 @@
     text-align: center;
     text-decoration: none;
 }
+
 .ex-12-top-white, .ex-13-top-white {
     position: absolute;
     top: -10px;
@@ -154,6 +155,38 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+}
+
+
+.ex-12-top-white{
+    animation-name:rotate3;
+    animation-iteration-count: infinite;
+    animation-duration:4s;
+    animation-timing-function:linear;
+}
+
+
+@keyframes rotate3{
+    0% {top: -10px; left: 10%;}
+    25% {top: -10px; left: 30%;}
+    50% {top: -10px; left: 50%;}
+    75% {top: -10px; left: 70%;}
+    100% {top: -10px; left: 90%;}
+}
+
+.ex-12-bottom-white{
+    animation-name:rotate4;
+    animation-iteration-count: infinite;
+    animation-duration:4s;
+    animation-timing-function:linear;
+}
+
+@keyframes rotate4{
+    0% {bottom: -10px; right: 10%;}
+    25% {bottom: -10px; right: 30%;}
+    50% {bottom: -10px; right: 50%;}
+    75% {bottom: -10px; right: 70%;}
+    100% {bottom: -10px; right: 80%;}
 }
 .ex-12-bottom-white, .ex-13-bottom-white {
     position: absolute;
@@ -163,3 +196,36 @@
     width: 60px;
     height: 20px;
 }
+
+.ex-13-button:hover .ex-13-top-white{
+    animation-name:rotate6;
+    animation-iteration-count: infinite;
+    animation-duration:4s;
+    animation-timing-function:ease-in-out;
+
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+    animation-name:rotate5;
+    animation-iteration-count: infinite;
+    animation-duration:4s;
+    animation-timing-function:ease-in-out;
+}
+
+@keyframes rotate5{
+    0% {bottom: -10px; right: -20px;}
+    25% {bottom: -10px; right: 80%;}
+    50% {bottom: 50px; right: 80%;}
+    75% {bottom: 50px; right: -20px;}
+    100% {bottom: -10px; right: -20px;}
+}
+
+@keyframes rotate6{
+    0% {top: -10px; left: 0;}
+    25% {top: -10px; left: 80%;}
+    50% {top: 50px; left: 80%;}
+    75% {top: 50px; left: -20px;}
+    100% {top: -10px; left: -20px;}
+}
+
+
